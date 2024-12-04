@@ -88,33 +88,7 @@ int main(){
 					printf("Khong tim thay phan tu trong mang\n");
 				}
 				break;
-			case 6:
-            	if (b == c)
-            {
-                for (int i = 0; i < b - 1; i++)
-                {
-                    for (int j = i + 1; j < b; j++)
-                    {
-                        if (arr[i][i] > arr[j][j])
-                        {
-                            temp = arr[i][i];
-                            arr[i][i] = arr[j][j];
-                            arr[j][j] = temp;
-                        }
-                    }
-                }
-                printf("Duong cheo chinh sau khi sap xep tang dan: ");
-                for (int i = 0; i < b; i++)
-                {
-                    printf("%d", arr[i][i]);
-                }
-                printf("\n");
-            }
-            else
-            {
-                printf("Khong hop le\n");
-            }
-            break;
+				
 			default:
 			    printf("Lua chon khong hop le");
 				break;	
