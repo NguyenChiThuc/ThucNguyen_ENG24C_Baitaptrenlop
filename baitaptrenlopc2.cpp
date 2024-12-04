@@ -33,7 +33,7 @@ int main(){
 				}
 				break;
 			case 2:
-			    for(int i=0;i<n;i++){
+			    	for(int i=0;i<n;i++){
 			    	for(int j=0;j<n;j++){
 			    		printf("%5d", arr[i][j]);
 					}
@@ -45,38 +45,38 @@ int main(){
 				result=1;
 				printf("Cac phan tu nam tren duong bien la:");
 				for (int i = 0; i < n; i++) {
-                    for (int j = 0; j < n; j++) {
-                        if (i == 0 || i == n - 1 || j == 0 || j == n - 1) {
-                            printf("%d ", arr[i][j]);
-                            result *= arr[i][j];
+                   		 for (int j = 0; j < n; j++) {
+                        	if (i == 0 || i == n - 1 || j == 0 || j == n - 1) {
+                           	 printf("%d ", arr[i][j]);
+                            	result *= arr[i][j];
                         }
                     }
                 }
-                printf("\nTich cac phan tu tren duong bien: %d\n", result);
-                break;
+                		printf("\nTich cac phan tu tren duong bien: %d\n", result);
+               			 break;
 			case 4:
 				printf("Cac phan tu nam tren duong cheo chinh: ");
-                for (int i = 0; i < n; i++) {
-                    printf("%d ", arr[i][i]);
+               			 for (int i = 0; i < n; i++) {
+                   		 printf("%d ", arr[i][i]);
                 }
-                printf("\n");
-                break;
+               			 printf("\n");
+               			 break;
 			case 5:
 				printf("Cac phan tu nam tren duong cheo phu: ");
-                for (int i = 0; i < n; i++) {
-                    printf("%d ", arr[i][n-i-1]);
+               			for (int i = 0; i < n; i++) {
+                   		printf("%d ", arr[i][n-i-1]);
                 }
-                printf("\n");
-                break;
+                		printf("\n");
+                		break;
 				
 			case 7:	
-			    int findIndex;
-			    int found;
-			    found = 0;
-			    printf("Nhap phan tu can tim: ");
-			    scanf("%d", &findIndex);
-			    printf("Vi tri cua phan tu can tim la: ");
-			    for(int i=0;i<n;i++){
+			    	int findIndex;
+			    	int found;
+			    	found = 0;
+			    	printf("Nhap phan tu can tim: ");
+			   	scanf("%d", &findIndex);
+			    	printf("Vi tri cua phan tu can tim la: ");
+			    	for(int i=0;i<n;i++){
 			    	for(int j=0;j<n;j++){
 			    		if(arr[i][j]==findIndex){
 			    			printf("[%d][%d]",i,j);
